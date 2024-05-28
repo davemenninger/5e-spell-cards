@@ -1,0 +1,26 @@
+// Standard playing card decks are 2.5 inches by 3.5 inches (64mm X 89mm).
+rect(x=1, y=1, width=178, height=250, fill="#FFF" stroke="#000", stroke-width="3", rx="21")
+
++text(title)(align="center", font-family="opensans", font-size=15, x=90, y=24)
+
+- var spacer = 12
+- var level_height = 42
+- var second_column = 87
+
++text("Level:")(align="left", font-family="opensans", font-size=6, x=21, y=level_height)
++text(level)(align="left", font-family="opensans", font-size=6, x=45, y=level_height)
++text(school)(align="left", font-family="opensans", font-size=6, x=second_column, y=level_height)
+
++text("Range:")(align="left", font-family="opensans", font-size=6, x=21, y=level_height+spacer)
++textWrap(range)(align="left", font-family="opensans", font-size=6, x=45, y=level_height+spacer, width=45)
+
++text("Duration:")(align="left", font-family="opensans", font-size=6, x=second_column, y=level_height+spacer)
++textWrap(duration)(align="left", font-family="opensans", font-size=6, x=second_column+30, y=level_height+spacer, width=36)
+
+if body.length > 1000
+	+text(body.length)(align="left", font-family="opensans", font-size=6, x=10, y=10)
+	+text("TOO LONG")(align="left", x=30, y=72)
+
++textWrap(body)(align="left", font-family="opensans", font-size=6, x=21, y=level_height+(spacer*3), width=136)
+
++text(classes)(align="left", font-family="opensans", font-size=6, x=21, y=250-spacer)
