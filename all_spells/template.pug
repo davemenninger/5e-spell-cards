@@ -17,7 +17,9 @@ rect(x=1, y=1, width=178, height=250, fill="#FFF" stroke="#000", stroke-width="3
 +text("Duration:")(align="left", font-family="opensans", font-size=6, x=second_column, y=level_height+spacer)
 +textWrap(duration)(align="left", font-family="opensans", font-size=6, x=second_column+30, y=level_height+spacer, width=36)
 
-if body.length > 1000
+
+
+if body.length > 875
 	+text(body.length)(align="left", font-family="opensans", font-size=6, x=10, y=10)
 	+text("TOO LONG")(align="left", x=30, y=72)
 
