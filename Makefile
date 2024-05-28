@@ -9,8 +9,6 @@ unbundle: ## extract the files from within the ccsb bundle
 bundle: ## put bundle contents from a directory back into the ccsb file
 	 cd all_spells && zip -r ../all_spells.ccsb ./* && cd ..
 
-
-
 help: ## Shows this help.
 	@IFS=$$'\n' ; \
 	help_lines=(`fgrep -h "##" $(MAKEFILE_LIST) | fgrep -v fgrep | sed -e 's/\\$$//'`); \
