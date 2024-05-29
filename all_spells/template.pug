@@ -1,22 +1,26 @@
 // Standard playing card decks are 2.5 inches by 3.5 inches (64mm X 89mm).
 rect(x=1, y=1, width=178, height=250, fill="#FFF" stroke="#000", stroke-width="3", rx="21")
 
+- var title_height = 24
 - var ffamily="opensans"
 - var ffamily_bold="opensans700"
-
-+text(title)(align="center", font-family=ffamily_bold, font-size=15, x=90, y=24)
-
 - var spacer = 9
 - var level_height = 42
 - var first_column = 21
 - var second_column = 60
 - var third_column = 111
 
++text(title)(align="center", font-family=ffamily_bold, font-size=15, x=90, y=24)
+line(x1=first_column-3, y1=title_height+5, x2=178-21, y2=title_height+5, stroke="#C00", stroke-width="1")
+
 if level=="Cantrip"
 	- var level = "C"
 
 +text("Level")(align="left", font-family=ffamily_bold, font-size=6, x=first_column, y=level_height)
 +text(level)(align="left", font-family=ffamily_bold, font-size=18, x=first_column+3, y=level_height+20)
+
+rect(x=first_column-3, y=level_height-spacer, width=24, height=35, fill="none" stroke="#CCC", stroke-width="1", rx="6")
+
 // +text(school)(align="left", font-family="opensans", font-size=6, x=second_column, y=level_height)
 
 +text("Range")(align="left", font-family=ffamily_bold, font-size=6, x=second_column, y=level_height)
