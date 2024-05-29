@@ -12,9 +12,11 @@ rect(x=1, y=1, width=178, height=250, fill="#FFF" stroke="#000", stroke-width="3
 - var second_column = 60
 - var third_column = 111
 
+if level=="Cantrip"
+	- var level = "C"
 
 +text("Level")(align="left", font-family=ffamily_bold, font-size=6, x=first_column, y=level_height)
-+text(level)(align="left", font-family=ffamily, font-size=6, x=first_column, y=level_height+spacer)
++text(level)(align="left", font-family=ffamily_bold, font-size=18, x=first_column+3, y=level_height+20)
 // +text(school)(align="left", font-family="opensans", font-size=6, x=second_column, y=level_height)
 
 +text("Range")(align="left", font-family=ffamily_bold, font-size=6, x=second_column, y=level_height)
