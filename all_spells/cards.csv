@@ -279,3 +279,29 @@ Grovel. The target falls prone and then ends its turn.
 Halt. The target doesn't move and takes no actions. A flying creature stays aloft, provided that it is able to do so. If it must move to stay aloft, it flies the minimum distance needed to remain in the air.
 
 At Higher Levels. When you cast this spell using a spell slot of 2nd level or higher, you can affect one additional creature for each slot level above 1st. The creatures must be within 30 feet of each other when you target them.","1","Enchantment","Cleric, Paladin","1 action","60 feet","V","1 round"
+"1","Commune","You contact your deity or a divine proxy and ask up to three questions that can be answered with a yes or no. You must ask your questions before the spell ends. You receive a correct answer for each question.
+
+Divine beings aren't necessarily omniscient, so you might receive ""unclear"" as an answer if a question pertains to information that lies beyond the deity's knowledge. In a case where a one-word answer could be misleading or contrary to the deity's interests, the GM might offer a short phrase as an answer instead.
+
+If you cast the spell two or more times before finishing your next long rest, there is a cumulative 25 percent chance for each casting after the first that you get no answer. The GM makes this roll in secret.","5","Divination","Cleric","1 minute","Self","V, S, M (incense and a vial of holy or unholy water)","1 minute"
+"1","Commune with Nature","You briefly become one with nature and gain knowledge of the surrounding territory. In the outdoors, the spell gives you knowledge of the land within 3 miles of you. In caves and other natural underground settings, the radius is limited to 300 feet. The spell doesn't function where nature has been replaced by construction, such as in dungeons and towns.
+
+You instantly gain knowledge of up to three facts of your choice about any of the following subjects as they relate to the area:
+
+terrain and bodies of water
+prevalent plants, minerals, animals, or peoples
+powerful celestials, fey, fiends, elementals, or undead
+influence from other planes of existence
+buildings
+For example, you could determine the location of powerful undead in the area, the location of major sources of safe drinking water, and the location of any nearby towns.","5","Divination (ritual)","Druid, Ranger","1 minute","Self","V, S","Instantaneous"
+"1","Comprehend Languages","For the duration, you understand the literal meaning of any spoken language that you hear. You also understand any written language that you see, but you must be touching the surface on which the words are written. It takes about 1 minute to read one page of text.
+
+This spell doesn't decode secret messages in a text or a glyph, such as an arcane sigil, that isn't part of a written language.","1","Divination (ritual)","Bard, Sorcerer, Warlock, Wizard","1 action","Self","V, S, M (a pinch of soot and salt)","1 hour"
+"1","Compulsion","Creatures of your choice that you can see within range and that can hear you must make a Wisdom saving throw. A target automatically succeeds on this saving throw if it can't be charmed. On a failed save, a target is affected by this spell. Until the spell ends, you can use a bonus action on each of your turns to designate a direction that is horizontal to you. Each affected target must use as much of its movement as possible to move in that direction on its next turn. It can take its action before it moves After moving in this way, it can make another Wisdom saving to try to end the effect
+
+A target isn't compelled to move into an obviously deadly hazard, such as a fire or pit, but it will provoke opportunity attacks to move in the designated direction.","4","Enchantment","Bard","1 action","30 feet","V, S","Concentration, up to 1 minute"
+"1","Cone of Cold","A blast of cold air erupts from your hands. Each creature in a 60-foot cone must make a Constitution saving throw. A creature takes 8d8 cold damage on a failed save, or half as much damage on a successful one.
+
+A creature killed by this spell becomes a frozen statue until it thaws.
+
+At Higher Levels. When you cast this spell using a spell slot of 6th level or higher, the damage increases by 1d8 for each slot level above 5th.","5","Evocation","Sorcerer, Wizard","1 action","Self (60-foot cone)","V, S, M (a small crystal or glass cone)","Instantaneous"
