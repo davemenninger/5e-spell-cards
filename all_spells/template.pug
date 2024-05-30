@@ -7,34 +7,36 @@ rect(x=1, y=1, width=178, height=250, fill="#FFF" stroke="#000", stroke-width="3
 - var spacer = 9
 - var level_height = 42
 - var first_column = 21
-- var second_column = 60
-- var third_column = 111
+- var second_column = 51
+- var third_column = 78
+- var fourth_column = 105
 
 +text(title)(align="center", font-family=ffamily_bold, font-size=15, x=90, y=24)
-line(x1=first_column-3, y1=title_height+5, x2=178-21, y2=title_height+5, stroke="#C00", stroke-width="1")
+line(x1=first_column, y1=title_height+5, x2=178-first_column, y2=title_height+5, stroke="#C00", stroke-width="1")
 
 if level=="Cantrip"
 	- var level = "C"
 
-+text("Level")(align="left", font-family=ffamily_bold, font-size=6, x=first_column, y=level_height)
-+text(level)(align="left", font-family=ffamily_bold, font-size=18, x=first_column+3, y=level_height+20)
-
-rect(x=first_column-3, y=level_height-spacer, width=24, height=35, fill="none" stroke="#CCC", stroke-width="1", rx="6")
++text("Level")(align="center", font-family=ffamily_bold, font-size=6, x=first_column+12, y=level_height)
++text(level)(align="center", font-family=ffamily_bold, font-size=18, x=first_column+12, y=level_height+20)
+rect(x=first_column, y=level_height-9, width=24, height=36, fill="none" stroke="#CCC", stroke-width="1", rx="6")
 
 // +text(school)(align="left", font-family="opensans", font-size=6, x=second_column, y=level_height)
 
-+text("Range")(align="left", font-family=ffamily_bold, font-size=6, x=second_column, y=level_height)
-+textWrap(range)(align="left", font-family="opensans", font-size=6, x=second_column, y=level_height+spacer, width=48)
++text("Casting Time")(align="left", font-family=ffamily_bold, font-size=5, x=second_column, y=level_height)
++textWrap(castingtime)(align="left", font-family="opensans", font-size=5, x=second_column, y=level_height+spacer, width=42)
 
-+text("Duration")(align="left", font-family=ffamily_bold, font-size=6, x=third_column, y=level_height)
-+textWrap(duration)(align="left", font-family="opensans", font-size=6, x=third_column, y=level_height+spacer, width=42)
++text("Range")(align="left", font-family=ffamily_bold, font-size=5, x=fourth_column, y=level_height)
++textWrap(range)(align="left", font-family="opensans", font-size=5, x=fourth_column, y=level_height+spacer, width=60)
 
++text("Duration")(align="left", font-family=ffamily_bold, font-size=5, x=second_column, y=level_height+(spacer*2))
++textWrap(duration)(align="left", font-family="opensans", font-size=5, x=second_column, y=level_height+(spacer*3), width=75)
 
 
 if body.length > 875
 	+text(body.length)(align="left", font-family="opensans", font-size=6, x=10, y=10, fill="#C00")
 	+text("TOO LONG")(align="left", x=30, y=12, fill="#C00")
 
-+textWrap(body)(align="left", font-family="opensans", font-size=6, x=21, y=level_height+(spacer*4), width=136)
++textWrap(body)(align="left", font-family="opensans", font-size=6, x=first_column, y=level_height+(spacer*5), width=136)
 
 +text(classes)(align="left", font-family=ffamily_bold, font-size=6, x=21, y=250-spacer)
